@@ -26,7 +26,9 @@ function NavBar() {
   return (
     <div className="nav">
       <div className="nav-left" id="nav-left">
-        <a id="toggleNav" onClick={toggleNav} href="#"><img style={{ borderRadius: 0 }} src={hamburger} alt="" /></a>
+        <button id="toggleNav" onClick={toggleNav}>
+          <img style={{ borderRadius: 0 }} src={hamburger} alt="" />
+        </button>
         <a href="/">
           <img id="logo" src={logo} alt="" />
         </a>
@@ -39,16 +41,16 @@ function NavBar() {
           ))}
         </div>
         <div className="user" id="user">
-          <a href="#" onClick={toggleUser}>
+          <button onClick={toggleUser}>
             <img id="userImg" src={usericon} alt="user icon" />
             <img id="togimg2" src={dropdown} alt="" />
-          </a>
+          </button>
           <div className="user-opt" id="userOpt">
             <ul>
-              <li><a href="#">My profile</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">leaderboards</a></li>
-              <li><a href="#">Notices</a></li>
+              <li><a href="/">My profile</a></li>
+              <li><a href="/">Dashboard</a></li>
+              <li><a href="/">leaderboards</a></li>
+              <li><a href="/">Notices</a></li>
             </ul>
           </div>
         </div>
@@ -60,7 +62,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="side-close">
-        <button id="togglesidebar" onClick={toggleNav} href="#"><img src={cross} alt="" /></button>
+        <button id="togglesidebar" onClick={toggleNav} ><img src={cross} alt="" /></button>
       </div>
       <div className="sidebar-content">
         <div className="logo">
@@ -84,19 +86,19 @@ function Sidebar() {
             <li><a href="/">Link1</a></li>
             <li><a href="/">Link2</a></li>
             <li className="dropdown2" id="dropdown">
-              <a href="#" onClick={togSide}>Link3
+              <button onClick={togSide}>Link3
                 <img id="tog-img" src={dropdown} alt="" />
-              </a>
+              </button>
               <ul className="dropdown-menu2" id="dropdown-menu">
-                <li><a href="#">submenu</a></li>
-                <li><a href="#">submenu</a></li>
-                <li><a href="#">submenu</a></li>
-                <li><a href="#">submenu</a></li>
-                <li><a href="#">submenu</a></li>
+                <li><a href="/">submenu</a></li>
+                <li><a href="/">submenu</a></li>
+                <li><a href="/">submenu</a></li>
+                <li><a href="/">submenu</a></li>
+                <li><a href="/">submenu</a></li>
               </ul>
             </li>
-            <li><a href="#">Link4</a></li>
-            <li><a href="#">Link5</a></li>
+            <li><a href="/">Link4</a></li>
+            <li><a href="/">Link5</a></li>
           </ul>
         </div>
         <hr />
@@ -105,7 +107,7 @@ function Sidebar() {
             <h3>Social contacts</h3>
             <div className="card">
               <span>Click here</span>
-              <a className="social-link" href="#">
+              <a className="social-link" href="/">
                 <svg version="1.1" id="Layer_1" viewBox="0 0 461.001 461.001" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -118,7 +120,7 @@ function Sidebar() {
                   </g>
                 </svg>
               </a>
-              <a className="social-link" href="#">
+              <a className="social-link" href="/">
                 <svg fill="#000000" viewBox="0 0 512 512" id="icons">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -129,7 +131,7 @@ function Sidebar() {
                   </g>
                 </svg>
               </a>
-              <a className="social-link" href="#">
+              <a className="social-link" href="/">
                 <svg viewBox="0 -28.5 256 256" version="1.1" preserveAspectRatio="xMidYMid" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -142,7 +144,7 @@ function Sidebar() {
                   </g>
                 </svg>
               </a>
-              <a className="social-link" href="#">
+              <a className="social-link" href="/">
                 <svg fill="#000000" viewBox="0 0 1024 1024" className="icon">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -157,8 +159,8 @@ function Sidebar() {
           </div>
           <hr />
           <div className="side-profile">
-            <a href="#"><img src={dashboard} alt="" />Go to dashboard</a>
-            <a href="#"><img src={trophy} alt="" />Go to leaderboard</a>
+            <a href="/"><img src={dashboard} alt="" />Go to dashboard</a>
+            <a href="/"><img src={trophy} alt="" />Go to leaderboard</a>
           </div>
           <hr />
           <div className="side-copy">
@@ -205,8 +207,8 @@ function Footer() {
             </address>
           </div>
           <div className="fab2">
-            <a href="#"><img src={appstore} alt="App store" /></a>
-            <a href="#"><img src={gstore} alt="Play store" /></a>
+            <a href="/"><img src={appstore} alt="App store" /></a>
+            <a href="/"><img src={gstore} alt="Play store" /></a>
           </div>
           <div className="fab3">
             <a href={admin.facebook}><img src={facebook} alt="facebook" /></a>
@@ -218,12 +220,12 @@ function Footer() {
         </div>
         <div className="fcopy">
           <div className="flink">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Faq</a>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+            <a href="/">Privacy</a>
+            <a href="/">Terms</a>
+            <a href="/">Faq</a>
           </div>
           <p>Copyright &copy; 2022 Binary Center. All rights reserved.</p>
         </div>
@@ -338,7 +340,7 @@ function Homepage() {
               <div className='gcard-blur'>
                 <h2>{game.name}</h2>
                 <p>{game.desc}</p>
-                <a>Play now</a>
+                <button>Play now</button>
               </div>
             </div>
           ))}
