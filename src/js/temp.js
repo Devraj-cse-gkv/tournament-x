@@ -71,18 +71,18 @@ function Sidebar() {
         <hr />
         <div className="side-links">
           <ul>
-            <li><a href="#"><i className="fas fa-home"></i> Home</a></li>
-            <li><a href="#"><i className="fas fa-trophy"></i> Tournament</a></li>
-            <li><a href="#"><i className="fas fa-blog"></i> Blogs</a></li>
-            <li><a href="#"><i className="fas fa-envelope"></i> Contact Us</a></li>
-            <li><a href="#"><i className="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href={links.navlinks[0].url}><i className="fas fa-home"></i> Home</a></li>
+            <li><a href={links.navlinks[1].url}><i className="fas fa-trophy"></i> Tournament</a></li>
+            <li><a href={links.navlinks[2].url}><i className="fas fa-blog"></i> Blogs</a></li>
+            <li><a href="/"><i className="fas fa-envelope"></i> Contact Us</a></li>
+            <li><a href="/"><i className="fas fa-info-circle"></i> About Us</a></li>
           </ul>
         </div>
         <hr />
         <div className="side-main">
           <ul>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
+            <li><a href="/">Link1</a></li>
+            <li><a href="/">Link2</a></li>
             <li className="dropdown2" id="dropdown">
               <a href="#" onClick={togSide}>Link3
                 <img id="tog-img" src={dropdown} alt="" />
@@ -278,6 +278,7 @@ function Homepage() {
                 <button className="save"><i className="fas fa-bookmark"></i></button>
               </div>
               <div className="tag">{eventitem.status}</div>
+              <div className='tagbg'></div>
               <div className="tag-featured" style={{ backgroundColor: eventitem.bg }}>{eventitem.featured}</div>
             </div>
           ))}
@@ -294,7 +295,7 @@ function Homepage() {
             <option value="featured">Featured</option>
             <option value="recent">Recent</option>
             <option value='free'>Free</option>
-            <option value='â live'>Live</option>
+            <option value='live'>Live</option>
             <option value='coming soon'>Coming soon</option>
             <option value='double elimination'>Double Elimination</option>
             <option value='round robin'>Round Robin</option>
@@ -320,6 +321,7 @@ function Homepage() {
                   <button className="save"><i className="fas fa-bookmark"></i></button>
                 </div>
                 <div className="tag">{eventitem.status}</div>
+                <div className='tagbg'></div>
                 <div className="tag-featured" style={{ backgroundColor: eventitem.bg }}>{eventitem.featured}</div>
               </div>
             ))}
