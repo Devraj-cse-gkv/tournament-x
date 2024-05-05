@@ -331,6 +331,10 @@ i {
   }
 }
 
+main{
+  min-height: 80vh;
+}
+
 .dropdown-menu2 li,
 .side-profile a,
 .side-main ul li {
@@ -669,6 +673,15 @@ hr{
   /* filter: blur(2px); */
   opacity: 0.6;
 }
+.btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button{
+    min-width: 200px;
+  }
+}
 
 .qfilter{
   padding: 20px 60px;text-align: end;
@@ -682,10 +695,27 @@ hr{
     padding: 6px;
     color: aliceblue;
     width: 120px;
+    margin: 5px;
+    &:focus{
+      outline: 0;
+    }
+    option{
+      background-color: rgb(31, 3, 39);
+    }
   }
-  option{
-    background-color: rgb(31, 3, 39);
+  input{
+    background-color: transparent;
+    padding: 6px;
+    color: aliceblue;
+    width: 120px;
+    border: 1px solid grey;
+    outline: 0;
+    margin: 5px;
+    & :focus{
+      outline: 0;
+    }
   }
+  
 }
 .scroll .scr-card{
   margin-top: 50px;
@@ -1098,3 +1128,4 @@ footer{
     width: 50%;
   }
 }
+

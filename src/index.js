@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import { NavBar, Sidebar, Footer, Homepage } from './js/temp';
+import { NavBar, Sidebar, Footer, Homepage, AdminPage } from './js/temp';
 import reportWebVitals from './reportWebVitals';
 
 function loadTemp() {
@@ -42,7 +42,7 @@ function updatePage() {
     case '/admin' :
       main.render(
         <React.StrictMode>
-          <h1>Admin</h1>
+          <AdminPage />
         </React.StrictMode>
       );
       document.title += ' | Admin';

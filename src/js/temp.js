@@ -234,15 +234,19 @@ function Footer() {
   )
 };
 function Homepage() {
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedFilter, setSelectedFilter] = useState("");
   const handleFilterChange = (event) => {
     setSelectedFilter(event.target.value);
   };
   const filteredEvents = events.filter(eventitem => {
-    if (selectedFilter === "all") {
+    if (selectedFilter.toLocaleLowerCase() === "") {
       return true;
-    } else {
-      return Object.values(eventitem).some(value => value.toLowerCase().includes(selectedFilter));
+    } 
+    else if(selectedFilter.toLocaleLowerCase() === "all"){
+      return true;
+    }
+    else {
+      return Object.values(eventitem).some(value => value.toLowerCase().includes(selectedFilter.toLowerCase()));
     }
   });
 
@@ -254,7 +258,7 @@ function Homepage() {
             <h1>Some stories never end!</h1>
             <h2>Create your team. | Join the Tournament. | Battle till the last breath.</h2>
             <div className="btn">
-              <button className="primary-btn">Register Now</button>
+              <button className="primary-btn"><i class="fas fa-hand-point-up"></i> Register Now</button>
               <button className="secondary-btn">Discover Tournaments</button>
             </div>
           </div>
@@ -306,7 +310,7 @@ function Homepage() {
             <option value='analyzing'>Analyzing</option>
           </select>
 
-          <input value={selectedFilter} onChange={handleFilterChange}></input>
+          <input value={selectedFilter} placeholder='Search here.....' onChange={handleFilterChange}></input>
         </div>
         <div className='events' id='events'>
           {filteredEvents
@@ -357,6 +361,10 @@ function Homepage() {
   )
 };
 function AdminPage(){
-  
+  return(
+    <div className='adcont'>
+      
+    </div>
+  )
 }
-export { NavBar, Sidebar, Footer, Homepage };
+export { NavBar, Sidebar, Footer, Homepage, AdminPage };
