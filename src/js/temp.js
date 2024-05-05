@@ -242,7 +242,7 @@ function Homepage() {
     if (selectedFilter === "all") {
       return true;
     } else {
-      return Object.values(eventitem).some(value => value.toLowerCase() === selectedFilter);
+      return Object.values(eventitem).some(value => value.toLowerCase().includes(selectedFilter));
     }
   });
 
@@ -290,7 +290,9 @@ function Homepage() {
         <h2>Tournaments</h2>
         <p>Upcoming || Live || Completed</p>
         <div className='qfilter'>
+
           {/* Select dropdown for filtering */}
+
           <label>Filter by:</label>
           <select value={selectedFilter} onChange={handleFilterChange}>
             <option value='all'>All</option>
@@ -303,6 +305,8 @@ function Homepage() {
             <option value='round robin'>Round Robin</option>
             <option value='analyzing'>Analyzing</option>
           </select>
+
+          <input value={selectedFilter} onChange={handleFilterChange}></input>
         </div>
         <div className='events' id='events'>
           {filteredEvents
@@ -352,4 +356,7 @@ function Homepage() {
     </div>
   )
 };
+function AdminPage(){
+  
+}
 export { NavBar, Sidebar, Footer, Homepage };

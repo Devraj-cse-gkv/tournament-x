@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import { NavBar, Sidebar, Footer, Homepage} from './js/temp';
+import { NavBar, Sidebar, Footer, Homepage } from './js/temp';
 import reportWebVitals from './reportWebVitals';
 
 function loadTemp() {
@@ -27,24 +27,40 @@ function loadTemp() {
     </React.StrictMode>
   );
 }
-function homeLoad(){
-  const Home = ReactDOM.createRoot(document.getElementById('main'));
-  Home.render(
-    <React.StrictMode>
-      <Homepage />
-    </React.StrictMode>
-  );
-  document.title += ' | Home';
+function updatePage() {
+  const main = ReactDOM.createRoot(document.getElementById('main'));
+
+  switch (window.location.pathname) {
+    case '/':
+      main.render(
+        <React.StrictMode>
+          <Homepage />
+        </React.StrictMode>
+      );
+      document.title += ' | Home';
+    break;
+    case '/admin' :
+      main.render(
+        <React.StrictMode>
+          <h1>Admin</h1>
+        </React.StrictMode>
+      );
+      document.title += ' | Admin';
+      break;
+    default:
+      main.render(
+        <React.StrictMode>
+          <h1>404</h1>
+        </React.StrictMode>
+      );
+      document.title += ' | 404';
+      break;
+  }
 }
 window.onload = () => {
-  switch(window.location.pathname){
-    case '/' : loadTemp()
-    homeLoad();
-    break;
-    default: alert('404 Error');
-    break;
-  }
-  
+  loadTemp()
+  updatePage();
+
 };
 
 reportWebVitals();
