@@ -36,17 +36,5 @@ function togSide() {
 	}
 }
 
-// function setUrl() {
-// 	const section = document.getElementById("nav-link");
-
-// 	navlinks.forEach(navlink => {
-// 		const newLink = document.createElement('a');
-// 		newLink.id = navlink.name;
-// 		newLink.href = navlink.link;
-// 		newLink.innerText = navlink.name;
-// 		section.appendChild(newLink);
-// 	});
-// }
-
 
 export { togSide, toggleNav, toggleUser}

@@ -162,7 +162,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "1",
-    image: "/game1.jpg",
+    image: "/images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -173,7 +173,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "2",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -184,7 +184,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "3",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -194,7 +194,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "4",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -205,7 +205,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "5",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -216,7 +216,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "6",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -226,7 +226,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "7",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -237,7 +237,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "8",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -248,7 +248,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "9",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -258,7 +258,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "10",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -269,7 +269,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "11",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -280,7 +280,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "12",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -290,7 +290,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "13",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -301,7 +301,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "14",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -312,7 +312,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "15",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -322,7 +322,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "16",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -333,7 +333,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "17",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -344,7 +344,7 @@ const events = [
   {
     name: "Tournament 3",
     key: "18",
-    image: "/game3.jpg",
+    image: "/images/game3.jpg",
     price: "Free",
     schedule: "July 20, 2024",
     mode: "Double Elimination",
@@ -354,7 +354,7 @@ const events = [
   {
     name: "Tournament 1",
     key: "19",
-    image: "./game1.jpg",
+    image: "./images/game1.jpg",
     price: "$10",
     schedule: "May 10, 2024",
     mode: "Single Elimination",
@@ -365,7 +365,7 @@ const events = [
   {
     name: "Tournament 2",
     key: "20",
-    image: "/game2.jpg",
+    image: "/images/game2.jpg",
     price: "$20",
     schedule: "June 5, 2024",
     mode: "Round Robin",
@@ -380,25 +380,25 @@ const games= [
     id:'gamebgmi',
     name:'Bgmi',
     desc:'Battle Ground Mobile India',
-    image:'/gameimg.jpg',
+    image:'/images/gameimg.jpg',
   },
   {
     id:'gamevalo',
     name:'valorant',
     desc:'Fpp battle royal',
-    image:'/gameimg.jpg',
+    image:'/images/gameimg.jpg',
   },
   {
     id:'gameff',
     name:'freefire',
     desc:'Garena Freefire Max',
-    image:'/gameimg.jpg',
+    image:'/images/gameimg.jpg',
   },
   {
     id:'gamefortnite',
     name:'Fortnite',
     desc:'Most loved battle royal',
-    image:'/gameimg.jpg',
+    image:'/images/gameimg.jpg',
   }
 ]
 export { links, admin, events, games }
